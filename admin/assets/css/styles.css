@@ -1,0 +1,64 @@
+/* Apply background image and styling to the navbar */
+.navbar-inverse.set-radius-zero {
+    background: url('C:\xampp\htdocs\LMS\admin\assets\img\k.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 80px; /* Reduced height */
+    border-radius: 0;
+    border: none;
+}
+
+/* Logo styling to fit the reduced navbar height */
+.navbar-brand img {
+    height: 50px;
+    width: 60px;
+    margin-top: 10px; /* Adjusted to vertically align the logo */
+}
+
+/* Styling for the "LOG ME OUT" button */
+.right-div .btn {
+    margin-top: 20px; /* Align button with the reduced navbar height */
+}
+
+/* Apply background image and styling to the menu section */
+.menu-section {
+    background: url('C:\xampp\htdocs\LMS\admin\assets\img\k.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 10px 0; /* Reduce padding for a more compact appearance */
+}
+
+/* Dropdown menu styling */
+.navbar-nav > li > .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for dropdown */
+}
+
+/* Styling for the links in the navbar */
+.navbar-nav li a {
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px; /* Adjust font size for compactness */
+}
+
+/* Dropdown toggle arrow */
+.navbar-nav li a .fa-angle-down {
+    margin-left: 5px;
+}
+
+/* Hover effect for navbar links */
+.navbar-nav li a:hover,
+.navbar-nav li a.menu-top-active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-inverse.set-radius-zero {
+        height: auto; /* Default height for small screens */
+    }
+    .navbar-brand img {
+        margin-top: 0;
+    }
+    .right-div .btn {
+        margin-top: 10px;
+    }
+}
